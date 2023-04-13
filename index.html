@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>   
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz Form</title>
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- custom styles -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/result_style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/chart.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/forms.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body class="show-section">
+<div id="starter">
+    <div class="diver">
+			<form id="start" action="" method="post">
+			<div class="col-md-12">
+			
+			<label for="fname">Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Enter your name.." required>
+
+			
+		  
+			<input type="submit"  value="Start Quiz">
+		</div>
+		</form>
+	</div>
+</div>
+<div id="quiz" style="display:none">	
+	<section class="steps" id="step">
+		<div class="container">
+			<div class="mx-auto col-md-12 col-lg-10">
+
+				
+				<form id="steps" class="show-section" method="post">
+					<!-- step-1 -->
+					<section class="steps-inner pop-slide" id="step-1">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 1 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m10"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner">
+									<label class="form-input">
+										<input type="radio" name="q1" value="a">
+										Activate Developer Tab
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q1" value="b">
+										Providing a Lecturer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q1" value="c">
+										Personally Quizzes
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q1" value="d">
+										Massive Batches
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- step-2 -->
+					<section class="steps-inner"  id="step-2">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 2 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m20"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q2" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q2" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q2" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q2" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- step-3 -->
+					<section class="steps-inner" id="step-3">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 3 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m30"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Make a Multiple Choice Test Template Using Excel
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q3" value="a">
+										Activate Developer Tab
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q3" value="b">
+										Providing a Lecturer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q3" value="c">
+										Personally Quizzes
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q3" value="d">
+										Massive Batches
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- step-4 -->
+					<section class="steps-inner" id="step-4">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 4 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m40"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q4" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q4" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q4" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q4" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="steps-inner" id="step-5">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 5 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m50"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q5" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q5" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q5" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q5" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="steps-inner" id="step-6">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 6 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m60"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q6" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q6" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q6" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q6" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="steps-inner" id="step-7">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 7 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m70"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q7" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q7" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q7" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q7" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="steps-inner" id="step-8">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 8 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m80"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q8" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q8" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q8" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q8" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="steps-inner" id="step-9">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 9 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m90"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q9" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q9" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q9" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q9" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+							<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button type="button" class="next">next question<i class="fa-solid fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<section class="steps-inner" id="step-10">
+						<div class="wrapper">
+							<div class="step-heading">
+								<h2>Quiz</h2>
+								
+							</div>
+							<div class="step-bar">
+								<span class="step-counter">
+									Question 10 / 10
+								</span>
+								<div class="step-bar-inner">
+									<div class="step-bar-move step-move m100"></div>
+								</div>
+							</div>
+							<div>
+								<div class="form-heading">
+									Select What Suits you Best and Help us Improve Our Services.
+								</div>
+								<div class="form-inner pop-slide">
+									<label class="form-input">
+										<input type="radio" name="q10" value="a">
+										Fronted Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q10" value="b">
+										Web Designer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q10" value="c">
+										Full Stack Developer
+									</label>
+									<label class="form-input">
+										<input type="radio" name="q10" value="d">
+										Backend Developer
+									</label>
+								</div>
+
+								<!-- next-prev-btn -->
+								<div class="form-buttons">
+									<button type="button" class="prev"><i class="fa-solid fa-arrow-left"></i>last question</button>
+									<button id="sub" type="button" class="apply">submit<i class="phone-ring fa-solid fa-thumbs-up"></i></button>
+								</div>
+							</div>
+						</div>
+					</section>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- timer -->
+	<div class="sm-sticky">
+		<div class="timer">
+			<div class="countdown">
+				<span id="countdown-timer" class="time"></span>
+				<span class="time-ex">sec</span>
+			</div>
+			<div class="timer-heading">
+				Quiz<br/>
+				Time start
+			</div>
+		</div>
+	</div>
+
+</div>
+<div id="complete" style="display:none" >
+     <div class="loadingresult">
+            <img src="assets/images/loading.gif" alt="loading">
+        </div>
+        <div class="result_page">
+            <div class="result_inner">
+                <div class="result_inner2">
+                    <h2>Username:<span id="username"></span> - Quiz Summary</h2>
+                    <div class="u_result">
+                        <div class="u_score">Total Score: </div>
+                        <div class="u_prcnt">
+                            10
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="p_result">
+                        <div class="p_score">Your Score: </div>
+                        <div class="p_prcnt" id="correctper">
+                            
+                        </div>
+                        <span id="correctpoint"></span>
+                    </div>
+                    <div class="line"></div>
+					 <div id="containers"></div>
+                    <div class="result_show">
+                        <h2>Result</h2>
+                        <div class="pass_check">
+                            <i class="fa-solid fa-xmark"></i>You did not Pass
+                        </div>
+                        <div class="result_msg">
+                            Better Luck Next Time!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rectangle -->
+                <img class="behind_bg" src="assets/images/bh-clip.png" alt="rectangle">
+            </div>
+        </div>
+</div>
+	<div id="error"></div>
+
+<!-- bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Jquery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- custom JS -->
+<script src="assets/js/custom.js"></script>
+
+<!-- custom JS -->
+<script src="assets/js/highcharts.js"></script>
+<script src="assets/js/highcharts-3d.js"></script>
+<script src="assets/js/export-data.js"></script>
+<script src="assets/js/exporting.js"></script>
+
+<script>
+
+ $(document).ready(function() {
+ 
+   
+   $("#start").on("submit", function (event) {
+      
+	  event.preventDefault();
+         alert('Testing')
+      $('#quiz').css('display','block');
+	  $('#starter').css('display','none');
+	  
+	  localStorage.setItem("username", $('input[name=firstname]').val());
+	  
+	  var count = 100;
+
+		var interval = setInterval(function() 
+		{
+		  
+		  if(count == 0)
+		  {
+			clearInterval(interval);
+		  }
+		  else 
+		  {
+			count = count -1;
+		  }
+		  document.getElementById("countdown-timer").innerHTML = count;
+		},1000);
+	  
+  });
+ 
+  $("#sub").on("click", function() {
+    var score = 0;
+
+    // Question 1
+    var q1Answer = $("input[name=q1]:checked").val();
+    if (q1Answer == "c") {
+      score++;
+    }
+
+    // Question 2
+    var q2Answer = $("input[name=q2]:checked").val();
+    if (q2Answer == "a") {
+      score++;
+    }
+	
+	// Question 2
+    var q3Answer = $("input[name=q3]:checked").val();
+    if (q3Answer == "a") {
+      score++;
+    }
+	
+	// Question 2
+    var q4Answer = $("input[name=q4]:checked").val();
+    if (q4Answer == "a") {
+      score++;
+    }
+	
+	
+	// Question 2
+    var q5Answer = $("input[name=q5]:checked").val();
+    if (q5Answer == "c") {
+      score++;
+    }
+	
+	// Question 2
+    var q6Answer = $("input[name=q6]:checked").val();
+    if (q6Answer == "a") {
+      score++;
+    }
+	
+	// Question 2
+    var q7Answer = $("input[name=q7]:checked").val();
+    if (q7Answer == "d") {
+      score++;
+    }
+	
+	// Question 2
+    var q8Answer = $("input[name=q8]:checked").val();
+    if (q8Answer == "d") {
+      score++;
+    }
+	
+	// Question 2
+    var q9Answer = $("input[name=q9]:checked").val();
+    if (q9Answer == "a") {
+      score++;
+    }
+	
+	// Question 2
+    var q10Answer = $("input[name=q10]:checked").val();
+    if (q10Answer == "c") {
+      score++;
+    }
+	
+	//alert(score++);
+	
+	var correcttotal = 10 - score++;
+	
+	localStorage.setItem("correct", score++);
+	localStorage.setItem("wrong",correcttotal);	
+
+    $('#quiz').css('display','none');
+	$('#complete').css('display','block');
+	$('#wrongpoint').html(correcttotal);
+	$('#correctper').html(score++);
+	$('#username').html(localStorage.getItem("username"));
+	showresult();
+	
+	var colors = ['#4CAF50','#FF530D'];
+	Highcharts.chart('containers', {
+    chart: {
+        type: 'pie',
+        options3d: {
+            enabled: true,
+            alpha: 45,
+            beta: 0
+        }
+    },
+	title: {
+        text: 'Quiz summary',
+        align: 'center'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            depth: 35,
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}'
+            }
+        }
+    },
+	 colors:colors,
+    series: [{
+        type: 'pie',
+        name: 'Share',
+        data: [
+            ['Wrong Answer', parseInt(localStorage.getItem("correct")),'#fa4729'],
+            {
+                name: 'Correct Answer',
+                y: parseInt(localStorage.getItem("wrong")),
+                sliced: true,
+                selected: true
+            }
+           
+           
+        ]
+    }]
+});
+    
+	localStorage.clear();
+	
+  });
+});
+function showresult()
+{
+    $('.loadingresult').css('display', 'grid');
+
+    setTimeout(function()
+    {
+        $('.result_page').addClass('result_page_show');
+
+    },1000)
+};
+</script>
+
+</body>
+
+
+</html>
